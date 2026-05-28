@@ -38,8 +38,8 @@ interface ToastItem {
   text: string;
 }
 
-// Google Apps Script API URL
-const API_URL = "https://script.google.com/macros/s/AKfycbyC1vivpkTpNaEFE-tVRYxhlrRjT56dPqrJTyrGSueUACqhpFKL2xeBVupyGhclheTS/exec";
+// Google Apps Script API URL (Loaded from environment variable for security)
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 // Premium static Menu data as safe fallback database
 const FALLBACK_MENU: DrinkItem[] = [
