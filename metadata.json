@@ -1,0 +1,6 @@
+{
+  "name": "Office Drink Orderer",
+  "description": "精美的辦公室飲料訂購系統，支援即時菜單加載、極簡現代填單介面與今日統計列表。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

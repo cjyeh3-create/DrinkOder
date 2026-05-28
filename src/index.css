@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --color-bento-bg: #F8FAFC;
+  --color-bento-text: #0F172A;
+  --color-bento-border: #E2E8F0;
+  --color-bento-slate-header: #1E293B;
+  --color-bento-slate-sub: #64748B;
+  --color-bento-slate-bg: #F1F5F9;
+  --color-bento-emerald-light: #ECFDF5;
+  --color-bento-primary: #10B981;
+  --color-bento-primary-hover: #059669;
+}
+
+/* Bento Card Styles */
+.bento-card {
+  background: white;
+  border-radius: 24px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.bento-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom fine scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10B981;
+}
+
+/* Custom pulse animation */
+@keyframes pulseSoft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.animate-pulse-soft {
+  animation: pulseSoft 2s infinite ease-in-out;
+}
